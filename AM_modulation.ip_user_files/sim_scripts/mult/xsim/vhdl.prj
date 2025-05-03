@@ -1,0 +1,5 @@
+vhdl xil_defaultlib  \
+"../../../../AM_modulation.gen/sources_1/ip/mult/sim/mult.vhd" \
+
+# Do not sort compile order
+nosort

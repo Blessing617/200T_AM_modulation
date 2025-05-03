@@ -1,0 +1,47 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Tue Feb 20 15:10:51 2024
+# Process ID: 4108
+# Current directory: D:/Xilinx/Project/200t/AM_modulation
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26504 D:\Xilinx\Project\200t\AM_modulation\AM_modulation.xpr
+# Log file: D:/Xilinx/Project/200t/AM_modulation/vivado.log
+# Journal file: D:/Xilinx/Project/200t/AM_modulation\vivado.jou
+# Running On: Blessing, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 14, Host memory: 34142 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Xilinx/Project/200t/AM_modulation/AM_modulation.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+set_property package_pin "" [get_ports [list  adc_clk]]
+place_ports clk_50M W19
+place_ports adc_clk H19
+place_ports {adc_value[9]} K14
+place_ports {adc_value[8]} J14
+place_ports {adc_value[7]} H14
+place_ports {adc_value[6]} L19
+place_ports {adc_value[5]} L20
+place_ports {adc_value[4]} K17
+place_ports {adc_value[3]} J17
+place_ports {adc_value[2]} J20
+place_ports {adc_value[1]} J21
+place_ports {adc_value[0]} J19
+place_ports {am_value[13]} AB3
+place_ports {am_value[12]} AB2
+place_ports {am_value[11]} V4
+place_ports {am_value[10]} W4
+place_ports {am_value[9]} Y3
+place_ports {am_value[8]} AA3
+place_ports {am_value[7]} Y4
+place_ports {am_value[6]} AA4
+place_ports {am_value[5]} AA5
+place_ports {am_value[4]} AB5
+place_ports {am_value[3]} AB7
+place_ports {am_value[2]} AB6
+place_ports {am_value[1]} AA8
+place_ports {am_value[0]} AB8
+save_constraints -force
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
